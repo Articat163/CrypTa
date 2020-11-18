@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<ru.articat.crypta.Settings.MyPreferenceCategory
+		android:title="@string/app_settings">
+	</ru.articat.crypta.Settings.MyPreferenceCategory>
+	
+	<ListPreference
+        android:entries="@array/themes_entries"
+        android:entryValues="@array/themes_entry_values"
+        android:key="key_theme"
+		android:defaultValue="0"
+		android:summary="%s"
+        android:title="@string/day_night">
+    </ListPreference>
+	
+	<SwitchPreference
+        android:key="key_taktil"
+		android:defaultValue="true"
+		android:title="@string/taktil"
+        android:switchTextOff="@string/no"
+        android:switchTextOn="@string/yes"/>
+	
+	<SwitchPreference
+        android:key="key_lock"
+		android:defaultValue="true"
+		android:title="@string/pincode"
+        android:switchTextOff="@string/no"
+        android:switchTextOn="@string/yes"/>
+
+	<SwitchPreference
+		android:key="key_auto"
+		android:defaultValue="false"
+		android:title="@string/autologin"
+		android:switchTextOff="@string/no"
+		android:switchTextOn="@string/yes"/>
+	
+	<SwitchPreference
+        android:key="key_avatar"
+		android:defaultValue="true"
+		android:title="@string/menu_avatar"
+        android:switchTextOff="@string/no"
+        android:switchTextOn="@string/yes"/>
+
+	<SwitchPreference
+		android:key="key_tap_exit"
+		android:defaultValue="true"
+		android:title="@string/menu_tapExit"
+		android:switchTextOff="@string/no"
+		android:switchTextOn="@string/yes"/>
+	
+	<ListPreference
+		android:title="@string/show_theme_header"
+		android:key="key_header"
+		android:defaultValue="2"
+		android:summary="%s"
+		android:entries="@array/header_entries"
+		android:entryValues="@array/header_values" />
+	
+	<ru.articat.crypta.Settings.MyPreferenceCategory
+		android:title="@string/notification_settings">
+	</ru.articat.crypta.Settings.MyPreferenceCategory>
+	
+	<SwitchPreference
+        android:key="key_notify_on_off"
+		android:defaultValue="true"
+		android:title="@string/enable_notification"
+        android:switchTextOff="@string/no"
+        android:switchTextOn="@string/yes"/>
+	
+	<MultiSelectListPreference
+        android:dialogTitle="@string/notification_type"
+        android:key="notify_list"
+		android:dependency="key_notify_on_off"
+        android:summary=""        
+        android:title="@string/notification_type"
+        android:entries="@array/notify_type"
+        android:entryValues="@array/notify_values"
+		android:defaultValue="@array/empty_array"/>
+
+	<ru.articat.crypta.Settings.MyPreferenceCategory
+		android:title="@string/debug_settings">
+	</ru.articat.crypta.Settings.MyPreferenceCategory>
+
+	<SwitchPreference
+		android:key="key_notify_background"
+		android:defaultValue="true"
+		android:title="@string/background_notifications"
+		android:switchTextOff="@string/no"
+		android:switchTextOn="@string/yes"/>
+
+	<SwitchPreference
+		android:key="key_snack"
+		android:defaultValue="false"
+		android:title="@string/Show_app_info"
+		android:switchTextOff="@string/no"
+		android:switchTextOn="@string/yes"/>
+
+</PreferenceScreen>

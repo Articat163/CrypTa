@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="2dp"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_height="30dp"
+			android:text="@string/exit_title"
+			android:layout_width="match_parent"
+			android:layout_alignParentTop="true"
+			android:id="@+id/dialogTitle"
+			android:gravity="center"
+			android:layout_margin="10dp"
+			android:textStyle="bold"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:alpha=".87"/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp">
+
+		</View>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/exit_yes_no"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="match_parent"
+			android:layout_margin="10dp"
+			android:layout_marginBottom="30dp"
+			android:alpha=".87"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right">
+
+		<com.gc.materialdesign.views.ButtonFlat
+			android:layout_height="48dp"
+			android:text="@string/cancel"
+			
+			android:layout_width="100dp"
+			android:id="@+id/dialogexitButtonNo"
+			android:layout_marginBottom="10dp"
+			android:alpha=".87"/>
+
+		<com.gc.materialdesign.views.ButtonFlat
+			android:layout_height="48dp"
+			android:text="@string/exit"
+			
+			android:layout_width="100dp"
+			android:id="@+id/dialogexitButtonYes"
+			android:layout_marginBottom="10dp"
+			android:alpha=".87"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

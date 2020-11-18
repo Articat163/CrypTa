@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "ru.articat.crypta"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://jitpack.io' }
+}
+def var = dependencies {
+    androidTestImplementation'com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "com.android.support:customtabs:26.1.0"
+    implementation 'com.android.support:design:26.1.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'org.jsoup:jsoup:1.8.1'
+//    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+//    implementation 'com.cloudinary:cloudinary-android:1.2.2'
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.yandex.android:mobmetricalib:2.76'
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':MaterialDesign')
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+    implementation 'com.github.bumptech.glide:volley-integration:1.5.0@aar'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'com.github.NightWhistler:HtmlSpanner:0.4'
+    implementation 'io.github.rockerhieu:emojicon:1.4.0'
+}
+var
+
+dependencies {
+    implementation 'com.android.support:support-v13:26.1.0'
+}

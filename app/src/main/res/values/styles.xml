@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:textColorPrimary">@color/textColorPrimary</item>
+		<item name="android:textColorSecondary">@color/textColorSecondary</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<!--<style name="AppTheme.NoActionBar">-->
+		<!--<item name="windowActionBar">false</item>-->
+		<!--<item name="windowNoTitle">true</item>-->
+	<!--</style>-->
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+		<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+		-->
+		<!--<style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">-->
+			<!--<item name="android:typeface">serif</item>-->
+			<!--&lt;!&ndash;-->
+            <!--Theme customizations available in newer API levels can go in-->
+            <!--res/values-vXX/styles.xml, while customizations related to-->
+            <!--backward-compatibility can go here.-->
+			<!--&ndash;&gt;-->
+		<!--</style>-->
+
+		<!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+		<!--<style name="AppTheme" parent="AppBaseTheme">-->
+			<!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+		<!--</style>-->
+
+
+<!-- =============================================================== -->
+<!-- First styles -->
+<!-- =============================================================== -->
+
+	<!--<style name="window_color_style_1">-->
+	<!--<item name="android:background">@color/window_background_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="divider_color_style_1">-->
+	<!--<item name="android:background">@color/divider_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="light_field_color_style_1">-->
+	<!--<item name="android:background">@color/field_color_light_1</item>-->
+	<!--</style>-->
+
+
+	<!--<style name="light_text_color_style_1">-->
+	<!--<item name="android:textColor">@color/text_color_light_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="dark_text_color_style_1">-->
+	<!--<item name="android:textColor">@color/text_color_dark_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_color_style_1">-->
+	<!--<item name="android:background">@color/primary_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_color_style_1">-->
+	<!--<item name="android:background">@color/secondary_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_text_color_style_1">-->
+	<!--<item name="android:textColor">@color/primary_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_text_color_style_1">-->
+	<!--<item name="android:textColor">@color/secondary_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="send_message_style_1">-->
+	<!--<item name="android:background">@color/send_message_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="get_message_style_1">-->
+	<!--<item name="android:background">@color/get_message_color_1</item>-->
+	<!--</style>-->
+
+	<!--<style name="viepagertitlestrip_1">-->
+	<!--<item name="android:textColor">@color/text_color_light_1</item>-->
+	<!--<item name="android:background">@color/primary_color_1</item>-->
+	<!--<item name="android:textSize">14sp</item>-->
+	<!--</style>-->
+
+
+
+	<!--&lt;!&ndash; =============================================================== &ndash;&gt;-->
+	<!--&lt;!&ndash; Second styles &ndash;&gt;-->
+	<!--&lt;!&ndash; =============================================================== &ndash;&gt;-->
+
+	<!--<style name="window_color_style_2">-->
+	<!--<item name="android:background">@color/window_background_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="divider_color_style_2">-->
+	<!--<item name="android:background">@color/divider_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="light_field_color_style_2">-->
+	<!--<item name="android:background">@color/field_color_light_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="light_text_color_style_2">-->
+	<!--<item name="android:textColor">@color/text_color_light_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="dark_text_color_style_2">-->
+	<!--<item name="android:textColor">@color/text_color_dark_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_color_style_2">-->
+	<!--<item name="android:background">@color/primary_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_color_style_2">-->
+	<!--<item name="android:background">@color/secondary_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_text_color_style_2">-->
+	<!--<item name="android:textColor">@color/primary_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_text_color_style_2">-->
+	<!--<item name="android:textColor">@color/secondary_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="send_message_style_2">-->
+	<!--<item name="android:background">@color/send_message_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="get_message_style_2">-->
+	<!--<item name="android:background">@color/get_message_color_2</item>-->
+	<!--</style>-->
+
+	<!--<style name="viepagertitlestrip_2">-->
+	<!--<item name="android:textColor">@color/text_color_light_2</item>-->
+	<!--<item name="android:background">@color/primary_color_2</item>-->
+	<!--<item name="android:textSize">14sp</item>-->
+	<!--</style>-->
+
+	<!--&lt;!&ndash; =============================================================== &ndash;&gt;-->
+	<!--&lt;!&ndash; Third styles &ndash;&gt;-->
+	<!--&lt;!&ndash; =============================================================== &ndash;&gt;-->
+
+	<!--<style name="window_color_style_3">-->
+	<!--<item name="android:background">@color/window_background_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="divider_color_style_3">-->
+	<!--<item name="android:background">@color/divider_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="light_field_color_style_3">-->
+	<!--<item name="android:background">@color/field_color_light_3</item>-->
+	<!--</style>-->
+
+
+	<!--<style name="light_text_color_style_3">-->
+	<!--<item name="android:textColor">@color/text_color_light_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="dark_text_color_style_3">-->
+	<!--<item name="android:textColor">@color/text_color_dark_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_color_style_3">-->
+	<!--<item name="android:background">@color/primary_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_color_style_3">-->
+	<!--<item name="android:background">@color/secondary_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="primary_text_color_style_3">-->
+	<!--<item name="android:textColor">@color/primary_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="secondary_text_color_style_3">-->
+	<!--<item name="android:textColor">@color/secondary_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="send_message_style_3">-->
+	<!--<item name="android:background">@color/send_message_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="get_message_style_3">-->
+	<!--<item name="android:background">@color/get_message_color_3</item>-->
+	<!--</style>-->
+
+	<!--<style name="viepagertitlestrip_3">-->
+	<!--<item name="android:textColor">@color/text_color_light_3</item>-->
+	<!--<item name="android:background">@color/primary_color_3</item>-->
+	<!--<item name="android:textSize">14sp</item>-->
+	<!--</style>-->
+
+
+		<!-- =============================================================== -->
+		<!-- Forth styles -->
+		<!-- =============================================================== -->
+
+		<!--<style name="window_color_style_4">-->
+			<!--<item name="android:background">@color/window_background_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="divider_color_style_4">-->
+			<!--<item name="android:background">@color/divider_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="light_field_color_style_4">-->
+			<!--<item name="android:background">@color/field_color_light_4</item>-->
+		<!--</style>-->
+
+
+		<!--<style name="light_text_color_style_4">-->
+			<!--<item name="android:textColor">@color/text_color_light_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="dark_text_color_style_4">-->
+			<!--<item name="android:textColor">@color/text_color_dark_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="primary_color_style_4">-->
+			<!--<item name="android:background">@color/primary_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="secondary_color_style_4">-->
+			<!--<item name="android:background">@color/secondary_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="primary_text_color_style_4">-->
+			<!--<item name="android:textColor">@color/primary_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="secondary_text_color_style_4">-->
+			<!--<item name="android:textColor">@color/secondary_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="send_message_style_4">-->
+			<!--<item name="android:background">@color/send_message_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="get_message_style_4">-->
+			<!--<item name="android:background">@color/get_message_color_4</item>-->
+		<!--</style>-->
+
+		<!--<style name="viepagertitlestrip_4">-->
+			<!--<item name="android:textColor">@color/text_color_light_4</item>-->
+			<!--<item name="android:background">@color/primary_color_4</item>-->
+			<!--<item name="android:textSize">14sp</item>-->
+		<!--</style>-->
+
+
+
+
+
+
+<!-- end of styles -->
+
+		<style name="lockButtonsStyle">
+			<item name="android:layout_width">60dp</item>
+			<item name="android:layout_height">60dp</item>
+			<item name="android:layout_weight">1</item>
+			<item name="android:textSize">20sp</item>
+			<item name="android:scaleX">1.5</item>
+			<item name="android:scaleY">1.5</item>
+		</style>
+
+		<style name="lockViewStyle">
+			<item name="android:layout_width">25dp</item>
+			<item name="android:layout_height">25dp</item>
+			<item name="android:layout_margin">5dp</item>
+			<item name="android:gravity">center</item>
+			<item name="android:background">@drawable/round_lock</item>
+		</style>
+
+</resources>
+

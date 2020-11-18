@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/forum">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:title=""
+                    android:visible="false"/>
+                <item
+                    android:id="@+id/unread"
+                    android:icon="@drawable/ic_forum_news"
+                    android:title="@string/unread" />
+                <item
+                    android:id="@+id/messages"
+                    android:icon="@drawable/ic_messages"
+                    android:title="@string/messages" />
+                <item
+                    android:id="@+id/favorites"
+                    android:icon="@drawable/mark_white"
+                    android:title="@string/favorites" />
+                <item
+                    android:id="@+id/bookmarks"
+                    android:icon="@drawable/ic_atach"
+                    android:title="@string/bookmarks" />
+
+                <item
+                    android:id="@+id/forums"
+                    android:icon="@drawable/ic_forum"
+                    android:title="@string/forums" />
+                <item
+                    android:id="@+id/activity"
+                    android:icon="@drawable/ic_activity"
+                    android:title="@string/activity" />
+            </group>
+         </menu>
+    </item>
+
+    <item android:title="@string/about_project">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_version"
+                    android:title="@string/app_version" />
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_help_project"
+                    android:title="@string/help_project" />
+                <item
+                    android:id="@+id/sms_to_author"
+                    android:icon="@drawable/ic_sms_to_author"
+                    android:title="@string/sms_to_author" />
+                <item
+                    android:id="@+id/app_setting"
+                    android:icon="@drawable/ic_app_settings"
+                    android:title="@string/settings" />
+                <item
+                    android:id="@+id/app_exit"
+                    android:icon="@drawable/ic_app_exit"
+                    android:title="@string/exit" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
+

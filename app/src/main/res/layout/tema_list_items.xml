@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingTop="2dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/mainBg">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<ImageView
+				android:id="@+id/my_image"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_margin="3dp"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0"
+				android:layout_margin="3dp">
+
+				<TextView
+					android:id="@+id/txtNick"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="user"
+					android:textColor="?android:attr/textColorPrimary"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/txtCity"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text=""
+					android:textColor="?android:attr/textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/txtAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="add at time"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:padding="2dp"
+				android:gravity="center"
+				android:layout_margin="3dp">
+
+				<ImageView
+					android:layout_height="25dp"
+					android:src="@drawable/menu"
+					android:layout_width="25dp"
+					android:id="@+id/imgAnswerTema"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<!--<github.ankushsachdeva.emojicon.EmojiconTextView-->
+			<!--xmlns:emojicon="http://schemas.android.com/apk/res-auto"-->
+
+			<!--android:id="@+id/temaItemsEmojiTextView"-->
+			<!--android:layout_width="fill_parent"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:autoLink="web"-->
+			<!--android:linksClickable="true"-->
+			<!--android:padding="10dip"-->
+			<!--android:textSize="12dip"/>-->
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:id="@+id/llForAdd"
+			android:gravity="center_vertical"
+			android:padding="2dp">
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

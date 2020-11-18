@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/full_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        app:srcCompat="@drawable/background_button_float" />
+
+    <ProgressBar
+        android:id="@+id/full_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        tools:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/imageButton_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/full_progressBar"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/textViewPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/full_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha=".6"
+        android:background="@color/warning_color"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="СКРЫТОЕ ФОТО"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</RelativeLayout>

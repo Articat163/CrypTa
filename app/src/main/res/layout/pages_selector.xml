@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:padding="11dp"
+		android:layout_margin="1dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="страница"
+			android:layout_width="wrap_content"
+			android:layout_margin="10dp"/>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp">
+
+		</View>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="40dp"
+			android:layout_margin="10dp"
+			android:gravity="center"
+			android:id="@+id/txtPage"
+			android:padding="5dp"
+			android:textStyle="bold"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_margin="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="1"
+				android:layout_width="wrap_content"
+				android:gravity="center"/>
+
+			<org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1.0"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:id="@+id/sbSelector"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="1"
+				android:layout_width="wrap_content"
+				android:gravity="center"
+				android:id="@+id/txtAllPages"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

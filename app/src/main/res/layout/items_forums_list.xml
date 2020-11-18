@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:id="@+id/forumslistitemRelativeLayout1">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:id="@+id/forumlistitemLinearLayout1"
+			android:gravity="center">
+
+			<com.gc.materialdesign.views.ButtonIcon
+				android:layout_height="30dp"
+				android:layout_width="30dp"
+				android:src="@drawable/star"
+				android:id="@+id/buttonIconStar"
+				android:padding="3dp"
+				android:layout_gravity="center"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_toLeftOf="@id/forumlistitemLinearLayout1"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="5dp"
+			android:id="@+id/forumslistitemLinearLayout1">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="vertical"
+				android:paddingLeft="2dp"
+				android:layout_margin="4dp"
+				android:gravity="center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="total"
+					android:layout_width="wrap_content"
+					android:id="@+id/forumlistitemTextViewTotal"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_centerInParent="true"
+			android:layout_toLeftOf="@id/forumslistitemLinearLayout1"
+			android:layout_margin="4dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="THEME"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="match_parent"
+				android:id="@+id/forumlistitemTextViewTitle"
+				android:alpha=".87"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

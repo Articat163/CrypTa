@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">CrypTa</string>
+
+    <string name="login_error">Ошибка авторизации! Неверный логин или пароль!</string>
+	<string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string-array name="spisok_forumov">
+        <item>About Forum</item>
+        <item>For Beginners</item>
+        <item>Crypto World</item>
+        <item>Coins / Tokens Talk</item>
+        <item>Bounties</item>
+        <item>Exchanges</item>
+        <item>Defi</item>
+        <item>Trading</item>
+        <item>Marketplace</item>
+        <item>ICO/IEO</item>
+        <item>Mobile Apps</item>
+        <item>Wallets</item>
+        <item>Tutorials</item>
+        <item>Mining</item>
+        <item>Services</item>
+        <item>Jobs</item>
+        <item>Referral Links</item>
+        <item>Gambling/HYIP/FreeCoins</item>
+        <item>Off Topic</item>
+
+        <item>О Форуме</item>
+        <item>Новички</item>
+        <item>Крипто Мир</item>
+        <item>Монеты / Токены</item>
+        <item>Баунти кампании</item>
+        <item>Биржи криптовалют</item>
+        <item>Обменники</item>
+        <item>Defi</item>
+        <item>Трейдинг</item>
+        <item>ICO/IEO</item>
+        <item>Мобильные Приложения</item>
+        <item>Кошельки</item>
+        <item>Инструкции</item>
+        <item>Майнинг</item>
+        <item>Услуги</item>
+        <item>Работа</item>
+        <item>Игры / Хайпы / Краны</item>
+        <item>Купить / Продать</item>
+        <item>Реферальный раздел</item>
+        <item>Оффтопик</item>
+    </string-array>
+
+
+    <string name="no_info">нет информации</string>
+    <string name="cancel">отмена</string>
+	<string name="exit">Выход</string>
+	<string name="yes">да</string>
+	<string name="no">нет</string>
+    <string name="close">закрыть</string>
+	<string name="settings">Настройки</string>
+    <string name="wait">пожалуйста, подождите...</string>
+	<string name="getting_data">получаем данные профиля</string>
+
+    <string name="not_equals">не совпадают</string>
+	<string name="four_numbs">введите 4 цифры</string>
+	<string name="wellcom">добро пожаловать</string>
+	<string name="not_success">пин-код не верный</string>
+    <string name="updating">обновление</string>
+    <string name="visit_link">[image]</string>
+    <string name="loading">загрузка</string>
+	<string name="exit_title">Закрыть приложение?</string>
+	<string name="exit_yes_no">Вы действительно хотите выйти?</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="action_settings">Настройки</string>
+
+
+    <!-- Strings related to login -->
+	<string name="prompt_login">Логин</string>
+	<string name="prompt_password">Пароль</string>
+	<string name="action_sign_in">вход</string>
+	<string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_field_required">Это поле обязательно к заполнению</string>
+
+    <!-- settings -->
+	
+	<string name="app_settings">настройки приложения</string>
+
+    <string name="notification_settings">настройки уведомлений</string>
+	<string name="enable_notification">включить уведомления</string>
+    <string name="notification_type">тип уведомления</string>
+    <string name="today">сегодня</string>
+	<string name="yesterday">вчера</string>
+    <string name="crop_error">your device doesn\'t support the crop action!</string>
+	<string name="unpossible_view">Не возможно отобразить сообщение!</string>
+    <string name="see_you_later">До новых встреч!</string>
+    <string name="in_process">в разработке</string>
+	<string name="autorisation">авторизация...</string>
+    <string name="pincode_off">защита пин-кодом отключена!</string>
+    <string name="background_notifications">Background notifications</string>
+	<string name="debug_settings">Debug settings</string>
+    <string name="views">Просмотров:</string>
+	<string name="answers">Ответов:</string>
+	<string name="last_answer">Последний ответ:</string>
+
+    <string name="unread">Непрочитанное</string>
+	<string name="messages">Сообщения</string>
+	<string name="bookmarks">Закладки</string>
+	<string name="favorites">Избранное</string>
+	<string name="forums">Форумы</string>
+	<string name="activity">Активность</string>
+
+    <string name="taktil">Тактильная отдача</string>
+	<string name="pincode">Защита пин-кодом</string>
+	<string name="menu_avatar">Аватар в меню</string>
+	<string name="show_theme_header">Показывать шапку темы</string>
+	<string name="autologin">автовход</string>
+    <string name="profile">профиль</string>
+	<string name="bookmark">закладка</string>
+	<string name="message">сообщение</string>
+	<string name="answer">ответить в теме</string>
+	<string name="day_night">День / ночь</string>
+	<string name="Show_app_info">Show application info</string>
+    <string name="forum">Форум</string>
+	<string name="about_project">О проекте</string>
+	<string name="help_project">Помощь проекту</string>
+	<string name="app_version">Версия приложения</string>
+	<string name="sms_to_author">Обратная связь</string>
+    <string name="app_help_message">Если, Вы, считаете, что проект CrypTa имеет право на существование и не против, чтоб он развивался и улучшался, то можете подбодрить автора бутылочкой пивка…</string>
+	<string name="buy_beer">угостить пивком</string>
+	<string name="your_help">Ваша помощь проекту</string>
+	<string name="app_help_message_2">Вы, также можете оставить свой комментарий или пожелания в теме приложения</string>
+	<string name="write_comment">оставить комментарий</string>
+    <string name="create_pin">придумайте пин-код</string>
+	<string name="repeat_pin">повторите пин-код</string>
+    <string name="menu_tapExit">Двойной тап для выхода</string>
+    <string name="double_tap_for_exit">Нажмите дважды для выхода</string>
+
+    <string-array name="notify_type">
+		<item>вибро</item>
+		<item>индикатор</item>
+		<item>звук</item>
+	</string-array>
+	
+	<string-array name="notify_values">
+		<item>вибро</item>
+		<item>индикатор</item>
+		<item>звук</item>
+	</string-array>
+	
+	<string-array name="empty_array">
+		<item>вибро</item>	
+	</string-array>
+	
+	<string-array name="themes_entries">
+        <item>автоматически</item>
+        <item>день</item>
+		<item>ночь</item>
+    </string-array>
+	
+    <string-array name="themes_entry_values">
+        <item>0</item>
+        <item>1</item>
+		<item>2</item>
+    </string-array>
+	
+	
+	<string-array name="header_entries">
+        <item>всегда</item>
+        <item>только, на первой странице</item>
+		<item>никогда</item>
+    </string-array>
+
+    <string-array name="header_values">
+        <item>1</item>
+        <item>2</item>
+		<item>3</item>
+    </string-array>
+</resources>

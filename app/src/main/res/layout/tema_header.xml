@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/mainBg">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/ivHeaderAvatar"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_margin="3dp"/>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:orientation="vertical"
+					android:layout_margin="3dp"
+					android:layout_weight="1.0">
+
+					<TextView
+						android:id="@+id/txtHeaderNick"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="user"
+						android:textColor="?android:attr/textColorPrimary" />
+
+					<TextView
+						android:id="@+id/txtHeaderCity"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text=""
+						android:textColor="?android:attr/textColorSecondary" />
+
+					<TextView
+						android:id="@+id/txtHeadAdd"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:text="add at time"
+						android:textColor="?android:attr/textColorSecondary"
+						android:textSize="10sp" />
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="match_parent"
+					android:layout_width="wrap_content"
+					android:orientation="vertical"
+					android:padding="2dp"
+					android:gravity="center"
+					android:layout_margin="3dp">
+
+					<ImageView
+						android:id="@+id/imgAnswer"
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:src="@drawable/menu"
+						android:tint="@color/colorPrimary" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<View
+				android:layout_height="1dp"
+				android:layout_width="match_parent" />
+
+			<TextView
+				android:id="@+id/txtTextHeader"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:autoLink="web"
+				android:gravity="center"
+				android:linksClickable="true"
+				android:padding="10dip"
+				android:textSize="14dip" />
+
+			<View
+				android:layout_height="1dp"
+				android:layout_width="match_parent" />
+
+			<com.github.aakira.expandablelayout.ExpandableLinearLayout
+
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:ael_duration="1000"
+				app:ael_expanded="true"
+				app:ael_interpolator="bounce"
+				android:orientation="vertical"
+				android:id="@+id/llForAdd"
+				android:padding="2dp"/>
+			
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

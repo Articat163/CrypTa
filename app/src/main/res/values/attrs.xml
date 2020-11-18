@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources> 
+		
+		<!--<attr name="primary_color_theme" format="reference"/>-->
+		<!--<attr name="secondary_color_theme" format="reference"/>-->
+		<!--<attr name="primary_text_color_theme" format="reference"/>-->
+		<!--<attr name="secondary_text_color_theme" format="reference"/>-->
+		<!--<attr name="dark_text_color_theme" format="reference"/>-->
+		<!--<attr name="light_text_color_theme" format="reference"/>-->
+		<!--<attr name="light_field_color_theme" format="reference"/>-->
+		<!--<attr name="dark_field_color_theme" format="reference"/>-->
+		<!--<attr name="divider_color_theme" format="reference"/>-->
+		<!--<attr name="window_color_theme" format="reference"/>-->
+		<!--<attr name="viepagertitlestrip_theme" format="reference"/>-->
+		<!--<attr name="send_message_theme" format="reference"/>-->
+		<!--<attr name="get_message_theme" format="reference"/>-->
+	<!---->
+	<declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+	
+	</resources>

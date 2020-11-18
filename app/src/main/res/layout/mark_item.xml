@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingTop="1dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1.0">
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:alpha=".87">
+
+					<TextView
+						android:layout_height="wrap_content"
+						android:text="раздел форума"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:layout_width="match_parent"
+						android:padding="4dp"
+						android:id="@+id/markitemTextViewSection"
+						android:alpha=".87"/>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:id="@+id/itemsLinearLayout1Title">
+
+					<TextView
+						android:layout_height="match_parent"
+						android:text="Text"
+						android:layout_width="wrap_content"
+						android:id="@+id/markitemtxtTitle"
+						android:textStyle="bold"
+						android:textSize="14sp"
+						android:layout_weight="1.0"
+						android:paddingLeft="10dp"
+						android:paddingTop="1dp"
+						android:alpha=".87"/>
+
+					<ImageView
+						android:layout_height="25dp"
+						android:layout_width="25dp"
+						android:background="@drawable/movie"
+						android:id="@+id/markitemivVideo"
+						android:visibility="gone"
+						android:layout_marginRight="10dp"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="left"
+			android:paddingLeft="10dp"
+			android:paddingTop="2dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtNick"
+				android:textSize="12sp"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right"
+			android:paddingRight="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtCity"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtDate"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/markeditemLinearLayout1">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_width="match_parent"
+				android:id="@+id/markitemtxtText"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:paddingBottom="5dp"
+				android:paddingTop="5dp"
+				android:alpha=".54"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Просмотров:"
+				android:layout_width="wrap_content"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="VIE"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtViews"
+				android:textSize="10sp"
+				android:layout_marginLeft="2dp"
+				android:layout_marginRight="2dp"
+				android:gravity="center"/>
+
+			<View
+				android:layout_height="match_parent"
+				android:background="?android:attr/dividerHorizontal"
+				android:layout_width="1dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Ответов:"
+				android:layout_width="wrap_content"
+				android:textSize="10sp"
+				android:layout_marginRight="2dp"
+				android:layout_marginLeft="2dp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="ANS"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtAnswers"
+				android:textSize="10sp"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_height="0dp"
+			android:layout_width="match_parent"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Последний ответ:"
+				android:layout_width="wrap_content"
+				android:textSize="10sp"
+				android:layout_marginRight="2dp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="LastUser"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtLastUser"
+				android:textSize="10sp"
+				android:layout_marginRight="2dp"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="LastDate"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtLastDate"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:alpha=".54"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="LastTime"
+				android:layout_width="wrap_content"
+				android:id="@+id/markitemtxtLastTime"
+				android:textSize="10sp"
+				android:gravity="center"
+				android:alpha=".54"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
