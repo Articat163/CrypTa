@@ -9,7 +9,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -74,9 +73,9 @@ public class SectionAdapter extends BaseAdapter// ArrayAdapter<SecionModel>
 	//	color=context.getResources().getColor(R.color.secondary_color_1);
         // Lookup view for data population
 		final ImageView mark = (ImageView) convertView.findViewById(R.id.itemsImageViewMark);
-		RelativeLayout markLayout = (RelativeLayout) convertView.findViewById((R.id.itemsLinearLayout1Title));
+//		RelativeLayout markLayout = (RelativeLayout) convertView.findViewById((R.id.itemsLinearLayout1Title));
 
-		markLayout.setOnClickListener(new OnClickListener(){
+		mark.setOnClickListener(new OnClickListener(){
 				@Override
 				public void onClick(View v){
 					// тема есть в закладках
@@ -113,15 +112,15 @@ public class SectionAdapter extends BaseAdapter// ArrayAdapter<SecionModel>
 			});
 		TextView txtLastAnswer = (TextView) convertView.findViewById(R.id.itemsTextViewLastAnswer);
 		TextView txtTitle = (TextView) convertView.findViewById(R.id.txtTitle);
-        TextView txtText = (TextView) convertView.findViewById(R.id.txtText);
+//        TextView txtText = (TextView) convertView.findViewById(R.id.txtText);
 		TextView txtNicks = (TextView) convertView.findViewById(R.id.txtNick);
 		TextView txtDate = (TextView) convertView.findViewById(R.id.txtDate);
 		TextView txtUser = (TextView) convertView.findViewById(R.id.txtLastUser);
 		TextView txtLastDate = (TextView) convertView.findViewById(R.id.txtLast);
-		TextView txtCity = (TextView) convertView.findViewById(R.id.txtCity);
+//		TextView txtCity = (TextView) convertView.findViewById(R.id.txtCity);
 		TextView txtAnswers = (TextView) convertView.findViewById(R.id.txtAnswers);
 		TextView txtViews = (TextView) convertView.findViewById(R.id.txtViews);
-		ImageView ivVideo = (ImageView) convertView.findViewById(R.id.ivVideo);
+//		ImageView ivVideo = (ImageView) convertView.findViewById(R.id.ivVideo);
 		//save original textcolor
 //		int oldColors = context.getResources().getColor(android.R.color.darker_gray);
         // Populate the data into the template view using the data object
@@ -137,7 +136,7 @@ public class SectionAdapter extends BaseAdapter// ArrayAdapter<SecionModel>
 			mark.setBackgroundDrawable(res.getDrawable(R.drawable.mark_grey));
 		}
         txtTitle.setText(forum.get(position).title);
-        txtText.setText(forum.get(position).text);
+//        txtText.setText(forum.get(position).text);
 		txtNicks.setText(forum.get(position).nick);
 		txtDate.setText(forum.get(position).date);
 	//	 String day = (String) android.text.format.DateFormat.format("dd", forum.date);
@@ -169,16 +168,16 @@ public class SectionAdapter extends BaseAdapter// ArrayAdapter<SecionModel>
 			txtLastDate.setText(forum.get(position).userDate+" "+forum.get(position).userTime);
 		}
 	//	txtLastDate.setText(forum.userDate);
-		txtCity.setText(forum.get(position).city);
+//		txtCity.setText(forum.get(position).city);
 		txtAnswers.setText(forum.get(position).answers);
 		txtViews.setText(forum.get(position).views);
 		
-		if (forum.get(position).video){ // есть видео
-			ivVideo.setVisibility(View.VISIBLE);
-		}
-		else{
-			ivVideo.setVisibility(View.GONE);
-		}
+//		if (forum.get(position).video){ // есть видео
+//			ivVideo.setVisibility(View.VISIBLE);
+//		}
+//		else{
+//			ivVideo.setVisibility(View.GONE);
+//		}
         // Return the completed view to render on screen
         return convertView;
     }

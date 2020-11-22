@@ -1,235 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:paddingLeft="2dp"
-	android:paddingRight="2dp">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-	<LinearLayout
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:orientation="vertical">
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
-		<RelativeLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:id="@+id/itemsLinearLayout1Title">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:text="Title"
+        app:layout_constraintBottom_toBottomOf="@+id/itemsImageViewMark"
+        app:layout_constraintEnd_toStartOf="@+id/itemsImageViewMark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemsImageViewMark" />
 
-			<ImageView
-				android:layout_height="25dp"
-				android:layout_width="25dp"
-				android:id="@+id/itemsImageViewMark"
-				android:layout_marginRight="10dp"
-				android:src="@drawable/mark_grey"
-				android:layout_alignParentRight="true"
-				android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/txtNick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Nick"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
-			<ImageView
-				android:layout_height="25dp"
-				android:layout_width="25dp"
-				android:background="@drawable/movie"
-				android:id="@+id/ivVideo"
-				android:visibility="gone"
-				android:layout_marginRight="10dp"
-				android:layout_toLeftOf="@id/itemsImageViewMark"
-				android:layout_centerVertical="true"
-				android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha=".54"
+        android:text="Date"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNick" />
 
-			<TextView
-				android:id="@+id/txtTitle"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignParentLeft="true"
-				android:layout_toLeftOf="@id/ivVideo"
-				android:maxLines="3"
+    <TextView
+        android:id="@+id/txtPage1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDate"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/txtPage2"
+        app:layout_constraintTop_toTopOf="@+id/txtNick" />
 
-				android:paddingLeft="10dp"
-				android:paddingTop="1dp"
-				android:text="Text"
-				android:textSize="14sp"
-				android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtPage2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPage1"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/txtPage3"
+        app:layout_constraintTop_toTopOf="@+id/txtPage1" />
 
-		</RelativeLayout>
+    <TextView
+        android:id="@+id/txtPage3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPage2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/txtPage4"
+        app:layout_constraintTop_toTopOf="@+id/txtPage2" />
 
-		<RelativeLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="left"
-			android:orientation="horizontal"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp"
-			android:paddingTop="2dp">
+    <TextView
+        android:id="@+id/txtPage4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPage3"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/txtPage5"
+        app:layout_constraintTop_toTopOf="@+id/txtPage3" />
 
-			<TextView
-				android:id="@+id/txtNick"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:alpha=".54"
-				android:gravity="center"
-				android:text="Text"
-				android:textColor="?android:attr/textColorSecondary"
-				android:textSize="12sp" />
+    <TextView
+        android:id="@+id/txtPage5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPage4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtPage4" />
 
+    <TextView
+        android:id="@+id/txtAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha=".87"
+        android:text="answ"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPage1" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha=".87"
+        android:text="@string/answers"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAnswers"
+        app:layout_constraintTop_toTopOf="@+id/txtAnswers" />
 
-		</RelativeLayout>
+    <TextView
+        android:id="@+id/txtViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:alpha=".87"
+        android:text="views"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
 
-		<RelativeLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:orientation="horizontal"
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha=".87"
+        android:text="@string/views"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtViews"
+        app:layout_constraintTop_toTopOf="@+id/txtViews" />
 
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp">
+    <TextView
+        android:id="@+id/txtLastUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".87"
+        android:text="lastUser"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnswers" />
 
-			<TextView
-				android:id="@+id/txtCity"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignParentLeft="true"
-				android:alpha=".54"
-				android:gravity="center"
-				android:text="Text"
-				android:textSize="10sp" />
+    <TextView
+        android:id="@+id/txtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".87"
+        android:text="LastDate"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLastUser"
+        app:layout_constraintTop_toTopOf="@+id/txtLastUser" />
 
-			<TextView
-				android:id="@+id/txtDate"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_alignParentRight="false"
-				android:layout_toRightOf="@+id/txtCity"
-				android:alpha=".54"
-				android:gravity="center"
-				android:text="Text"
-				android:textSize="10sp" />
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".87"
+        android:text="@string/last_answer"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtLast"
+        app:layout_constraintTop_toTopOf="@+id/txtLast" />
 
-		</RelativeLayout>
+    <ImageView
+        android:id="@+id/itemsImageViewMark"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/mark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="horizontal"
-			android:id="@+id/itemsLinearLayout1">
-
-			<TextView
-				android:id="@+id/txtText"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:maxLines="3"
-				android:paddingBottom="5dp"
-				android:paddingLeft="10dp"
-				android:paddingRight="10dp"
-				android:paddingTop="5dp"
-				android:text="Text" />
-
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="right"
-			android:orientation="horizontal"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp">
-
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="@string/views"
-				android:textSize="10sp" />
-
-			<TextView
-				android:id="@+id/txtViews"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginLeft="2dp"
-				android:layout_marginRight="2dp"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="VIE"
-				android:textSize="10sp" />
-
-			<View
-				android:layout_width="1dp"
-				android:layout_height="match_parent"
-				android:background="?android:attr/dividerHorizontal" />
-
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginLeft="2dp"
-				android:layout_marginRight="2dp"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="@string/answers"
-				android:textSize="10sp" />
-
-			<TextView
-				android:id="@+id/txtAnswers"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="ANS"
-				android:textSize="10sp" />
-
-		</LinearLayout>
-
-		<View
-			android:layout_height="0dp"
-			android:layout_width="match_parent" />
-
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="right"
-			android:orientation="horizontal"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp">
-
-			<TextView
-				android:id="@+id/itemsTextViewLastAnswer"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="2dp"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="@string/last_answer"
-				android:textSize="10sp" />
-
-			<TextView
-				android:id="@+id/txtLast"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="2dp"
-				android:alpha=".87"
-				android:gravity="center"
-				android:paddingLeft="4dp"
-				android:paddingRight="4dp"
-				android:text="LastDate"
-				android:textSize="10sp"
-				android:textStyle="bold" />
-
-			<TextView
-				android:id="@+id/txtLastUser"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:alpha=".87"
-				android:gravity="center"
-				android:text="LastUser"
-				android:textSize="10sp" />
-
-		</LinearLayout>
-
-	</LinearLayout>
-
-	<View
-		android:layout_height="2dp"
-		android:layout_width="match_parent"/>
-
-</LinearLayout>
-
+</android.support.constraint.ConstraintLayout>
