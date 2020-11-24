@@ -10,28 +10,28 @@
         android:entries="@array/themes_entries"
         android:entryValues="@array/themes_entry_values"
         android:key="key_theme"
-		android:defaultValue="0"
+		android:defaultValue="2"
 		android:summary="%s"
         android:title="@string/day_night">
     </ListPreference>
 	
 	<SwitchPreference
         android:key="key_taktil"
-		android:defaultValue="true"
+		android:defaultValue="false"
 		android:title="@string/taktil"
         android:switchTextOff="@string/no"
         android:switchTextOn="@string/yes"/>
 	
 	<SwitchPreference
         android:key="key_lock"
-		android:defaultValue="true"
+		android:defaultValue="false"
 		android:title="@string/pincode"
         android:switchTextOff="@string/no"
         android:switchTextOn="@string/yes"/>
 
 	<SwitchPreference
 		android:key="key_auto"
-		android:defaultValue="false"
+		android:defaultValue="true"
 		android:title="@string/autologin"
 		android:switchTextOff="@string/no"
 		android:switchTextOn="@string/yes"/>
@@ -64,7 +64,7 @@
 	
 	<SwitchPreference
         android:key="key_notify_on_off"
-		android:defaultValue="true"
+		android:defaultValue="false"
 		android:title="@string/enable_notification"
         android:switchTextOff="@string/no"
         android:switchTextOn="@string/yes"/>
@@ -85,7 +85,7 @@
 
 	<SwitchPreference
 		android:key="key_notify_background"
-		android:defaultValue="true"
+		android:defaultValue="false"
 		android:title="@string/background_notifications"
 		android:switchTextOff="@string/no"
 		android:switchTextOn="@string/yes"/>

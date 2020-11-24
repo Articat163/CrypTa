@@ -137,6 +137,8 @@
 	<string name="repeat_pin">повторите пин-код</string>
     <string name="menu_tapExit">Двойной тап для выхода</string>
     <string name="double_tap_for_exit">Нажмите дважды для выхода</string>
+    <string name="play_market">Play Market</string>
+    <string name="version">version:</string>
 
     <string-array name="notify_type">
 		<item>вибро</item>

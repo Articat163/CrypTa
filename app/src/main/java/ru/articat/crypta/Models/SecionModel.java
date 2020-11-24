@@ -3,7 +3,7 @@ package ru.articat.crypta.Models;
 public class SecionModel {
 	public String urlTema;
 	public String title;
-    public String text;
+    public String pages;
 	public String nick;
 	public String date;
 	public String user;
@@ -27,11 +27,11 @@ public class SecionModel {
 //		super(context, attrs, defStyle);
 //	}
 //
-    public SecionModel(String url, String title, String text, String nick, String date, String user, String userDate, String userTime, String city, String answers, String views, Boolean video) {
+    public SecionModel(String url, String title, String pages, String nick, String date, String user, String userDate, String userTime, String city, String answers, String views, Boolean video) {
         super();
 		this.urlTema=url;
 		this.title = title;
-        this.text = text;
+        this.pages = pages;
 		this.nick = nick;
 		this.date = date;
         this.user = user;

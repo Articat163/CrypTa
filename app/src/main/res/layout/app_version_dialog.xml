@@ -27,7 +27,7 @@
 		android:layout_margin="10dp"
 		android:layout_marginBottom="30dp"
 		android:alpha=".87"
-		android:text="version:"
+		android:text="@string/version"
 		android:textAppearance="?android:attr/textAppearanceSmall" />
 
 	<TextView
@@ -51,7 +51,7 @@
 		android:layout_marginRight="10dp"
 		android:layout_toLeftOf="@+id/dialogButtonClose"
 		android:alpha=".87"
-		android:text="Яндекс.Диск" />
+		android:text="@string/play_market" />
 
 	<com.gc.materialdesign.views.ButtonFlat
 		android:id="@+id/dialogButtonClose"

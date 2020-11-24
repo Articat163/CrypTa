@@ -69,7 +69,7 @@ public class SectionFragment extends Fragment implements OnClickListener, OnScro
 
 	private String urlTema;
 	private String titleList;
-	private String textList;
+	private String pagesList;
 	private String nickList;
 	private String dateList;
 	private String lastUserList;
@@ -358,19 +358,23 @@ public void init(String url){
 				//	urlTema.add(elems.select("a").eq(0).attr("abs:href"));
 				urlTema = elems.select("span.ipsType_break").select("a").eq(0).attr("href"); // ссылка на выбранную тему
 //						Log.i(TAG, "requestResult LINK:" + urlTema);
-				textList="";
+
 				nickList = elems.select("a.ipsType_break").eq(0).text();
 				dateList = elems.select("div.ipsDataItem_meta > time[data-short]").text();
 				videoList=(false); // нет на форуме CryptoTalk
 				cityList=""; // нет на форуме CryptoTalk
 				answersList = elems.select("ul.ipsDataItem_stats > li").first().select("span.ipsDataItem_stats_number").text(); // ответов
+//				Log.v(Constants.TAG, "answersList = " + answersList);
+//				Log.v(Constants.TAG, "Float.parseFloat(answersList) / 25f = " + Float.parseFloat(answersList) / 25f);
+//				Log.v(Constants.TAG, "(int)Math.ceil(Float.parseFloat(answersList) / 25f) = " + (int)Math.ceil(Float.parseFloat(answersList) / 25f));
+				pagesList = "" + (int)Math.ceil((Float.parseFloat(answersList)+1f) / 25f);
 				viewsList = elems.select("ul.ipsDataItem_stats > li.ipsType_light > span.ipsDataItem_stats_number").text(); // просмотров
 				lastUserDateList = elems.select("ul.ipsDataItem_lastPoster > li.ipsType_light > a.ipsType_blendLinks > time").attr("title"); // дата последнего ответа
 				lastUserTimeList = "";
 				lastUserList = elems.select("ul.ipsDataItem_lastPoster").text(); // последний ответ
 //						Log.i(TAG, "requestResult ДАТА: " + elems.select("ul.ipsDataItem_lastPoster > li.ipsType_light > a.ipsType_blendLinks > time").attr("title"));
 //						Log.i(TAG, "requestResult ВРЕМЯ: " + elems.select("ul.ipsDataItem_lastPoster > time[data-short]").text());
-				forum.add(new SecionModel(urlTema, titleList, textList, nickList, dateList, lastUserList, lastUserDateList, lastUserTimeList, cityList, answersList, viewsList, videoList));
+				forum.add(new SecionModel(urlTema, titleList, pagesList, nickList, dateList, lastUserList, lastUserDateList, lastUserTimeList, cityList, answersList, viewsList, videoList));
 
 			}
 

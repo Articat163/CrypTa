@@ -67,14 +67,16 @@
         android:layout_marginBottom="8dp"
         android:background="@color/colorAccent"
         android:gravity="center"
+        android:padding="2dp"
         android:text="1"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtDate"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1.25"
         app:layout_constraintEnd_toStartOf="@+id/txtPage2"
-        app:layout_constraintTop_toTopOf="@+id/txtNick" />
+        app:layout_constraintTop_toTopOf="@+id/txtNick"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txtPage2"
@@ -84,14 +86,16 @@
         android:layout_marginRight="8dp"
         android:background="@color/colorAccent"
         android:gravity="center"
+        android:padding="2dp"
         android:text="2"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtPage1"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1.25"
         app:layout_constraintEnd_toStartOf="@+id/txtPage3"
-        app:layout_constraintTop_toTopOf="@+id/txtPage1" />
+        app:layout_constraintTop_toTopOf="@+id/txtPage1"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txtPage3"
@@ -101,14 +105,16 @@
         android:layout_marginRight="8dp"
         android:background="@color/colorAccent"
         android:gravity="center"
+        android:padding="2dp"
         android:text="3"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtPage2"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1.25"
         app:layout_constraintEnd_toStartOf="@+id/txtPage4"
-        app:layout_constraintTop_toTopOf="@+id/txtPage2" />
+        app:layout_constraintTop_toTopOf="@+id/txtPage2"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txtPage4"
@@ -118,14 +124,16 @@
         android:layout_marginRight="8dp"
         android:background="@color/colorAccent"
         android:gravity="center"
+        android:padding="2dp"
         android:text="4"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtPage3"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1.25"
         app:layout_constraintEnd_toStartOf="@+id/txtPage5"
-        app:layout_constraintTop_toTopOf="@+id/txtPage3" />
+        app:layout_constraintTop_toTopOf="@+id/txtPage3"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txtPage5"
@@ -135,14 +143,17 @@
         android:layout_marginRight="16dp"
         android:background="@color/colorAccent"
         android:gravity="center"
+        android:lines="1"
+        android:padding="2dp"
         android:text="5"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txtPage4"
-        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintDimensionRatio="1.25"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtPage4" />
+        app:layout_constraintTop_toTopOf="@+id/txtPage4"
+        tools:visibility="visible" />
 
     <TextView
         android:id="@+id/txtAnswers"
@@ -156,7 +167,7 @@
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPage1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
 
     <TextView
         android:id="@+id/textView11"
