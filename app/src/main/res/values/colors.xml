@@ -6,145 +6,16 @@
 	<color name="colorAccent">#FF4081</color>
 	<color name="textColorPrimary">#212121</color>
 	<color name="textColorSecondary">#787878</color>
-
     <color name="warning_color">#E1624F</color>
-<!--
-		
-		
-	<color name="nickOnlineColor">#6BC579</color>
-	<color name="nickOfflineColor">#515151</color>
-		<color name="second_color_1">#ea806a</color>
-		<color name="action_bar_color_1">#ea806a</color>
-		<color name="light_text_1">#F5F5F5</color>
-		<color name="normal_button_1">#31b0de</color>
-		<color name="pressed_button_1">#077aa4</color>
 
-	<color name="main_color_2">#82BED7</color>
-	<color name="main_color_dark_2">#A37C91</color>
-	<color name="second_color_2">#00FFE1</color>
-	<color name="action_bar_color_2">#00FFE1</color>
-	<color name="light_text_2">#F5F5F5</color>
-	<color name="normal_button_2">#6AD6EA</color>
-	<color name="pressed_button_2">#2E5969</color>
-	<color name="today_color_1">#1DEAA7</color>
-	<color name="yesterday_color_1">#F9DEC0</color>
-	
-	<color name="top_color">#EA806A</color>
-	<color name="bottom_color">#78909c</color>
-	<color name="warning_color">#E46149</color>
-	<color name="bgColor">#909090</color>
-	<color name="sub_text_color">#8B8B8B</color>
-	<color name="text_color_hint">#515151</color>
-	<color name="text_color_400">#00e5ff</color>
-	<color name="tema_head_color">#80cbc4</color>
-	<color name="warningLayoutColor">#ea806a</color>
-	<color name="quoteColor">#515151</color>
-	<color name="greenColor">#7DB6B0</color>
-	<color name="quote_layout">#E8F7FE</color>
-	<color name="action_color_1">#E1624F</color>
-	<color name="bottom_send_color">#60AFAB</color>
-	<color name="text_color">#767676</color>
-	<color name="button_text_color">#2A7868</color>
-	<color name="text_color_total">#7a888d</color>
-	<color name="some_transparent_color">#30000000</color>
-	<color name="field_head">#F5F5F5</color>
-	<color name="warningTextColor">#FFFF00</color>
-	<color name="greenLayoutColor">#F5F5F5</color>
-	<color name="greyLayoutColor">#DEDEDE</color>
-	<color name="bg_text_color">#E0E0E0</color>
-	color name="text_color_dark">#313C40</color>
-	<color name="sub_text_color_dark">#000000</color>
-	<color name="text_color_hint">#E0E0E0</color>
-	
--->
-	
-	<!--<color name="bgColor">#909090</color>-->
 	
 <!--	**********************************
 				for all themes
 		********************************** -->
 
 	<color name="transparent_color">#00000000</color>
-    <color name="online_color">#4caf50</color>
 	<color name="today_color">#4db6ac</color>
 	<color name="yesterday_color">#ffccbc</color>
-	
-<!--	**********************************
-	   				first theme
-		********************************** -->
-		
-	<!--<color name="text_color_light_1">#ffffff</color>-->
-	<!--<color name="text_color_dark_1">#212121</color>-->
-	<!--<color name="field_color_light_1">#FEFEFE</color>-->
-	<!--<color name="primary_color_1">#E1624F</color>-->
-	<!--<color name="secondary_color_1">#60AFAB</color>-->
-	<!--<color name="sub_secondary_color_1">#8060AFAB</color>-->
-	<!--<color name="window_background_color_1">#E0E0E0</color>-->
-	<!--<color name="header_quote_1">#E9E9E9</color>-->
-	<!--<color name="divider_color_1">#9E9E9E</color>-->
-	<!--<color name="warning_color_1">#E1624F</color>-->
-	<!--<color name="background_message_color_1">#b0bec5</color>-->
-	<!--<color name="get_message_color_1">#ec9c90</color>-->
-	<!--<color name="send_message_color_1">#93c9c6</color>-->
-	<!---->
-	<!---->
-	<!---->
-<!--&lt;!&ndash;	**********************************-->
-					<!--second theme-->
-		<!--********************************** &ndash;&gt;-->
-	<!---->
-	<!--<color name="text_color_light_2">#ffffff</color>-->
-	<!--<color name="text_color_dark_2">#212121</color>-->
-	<!--<color name="field_color_light_2">#FEFEFE</color>-->
-	<!--<color name="primary_color_2">#00796b</color>-->
-	<!--<color name="secondary_color_2">#ff6f00</color>-->
-	<!--<color name="sub_secondary_color_2">#60AFAB</color>-->
-	<!--<color name="window_background_color_2">#E9E9E9</color>-->
-	<!--<color name="header_quote_2">#E9E9E9</color>-->
-	<!--<color name="divider_color_2">#9E9E9E</color>-->
-	<!--<color name="warning_color_2">#E1624F</color>-->
-	<!--<color name="get_message_color_2">#C2EFEB</color>-->
-	<!--<color name="send_message_color_2">#FFEAD5</color>-->
-
-
-<!--&lt;!&ndash;	**********************************-->
-				<!--third theme-->
-		<!--********************************** &ndash;&gt;-->
-
-	<!--<color name="text_color_light_3">#ffffff</color>-->
-	<!--<color name="text_color_dark_3">#212121</color>-->
-	<!--<color name="field_color_light_3">#FEFEFE</color>-->
-	<!--<color name="primary_color_3">#FFAA2C</color>-->
-	<!--<color name="secondary_color_3">#AFD460</color>-->
-	<!--<color name="sub_secondary_color_3">#D3EBCE</color>-->
-	<!--<color name="window_background_color_3">#E9E9E9</color>-->
-	<!--<color name="header_quote_3">#E9E9E9</color>-->
-	<!--<color name="divider_color_3">#9E9E9E</color>-->
-	<!--<color name="warning_color_3">#E1624F</color>-->
-	<!--<color name="get_message_color_3">#FBE5BC</color>-->
-	<!--<color name="send_message_color_3">#D8E0CB</color>-->
-	<!---->
-	<!---->
-
-<!--&lt;!&ndash;	**********************************-->
-				<!--forth theme-->
-		<!--********************************** &ndash;&gt;-->
-
-	<!--<color name="text_color_light_4">#ffffff</color>-->
-	<!--<color name="text_color_dark_4">#212121</color>-->
-	<!--<color name="field_color_light_4">#34474f</color>-->
-	<!--<color name="primary_color_4">#006064</color>-->
-	<!--<color name="secondary_color_4">#42a5f5</color>-->
-	<!--<color name="sub_secondary_color_4">#183668</color>-->
-	<!--<color name="window_background_color_4">#212121</color>-->
-	<!--<color name="header_quote_4">#E9E9E9</color>-->
-	<!--<color name="divider_color_4">#1e1e1e</color>-->
-	<!--<color name="warning_color_4">#E1624F</color>-->
-	<!--<color name="get_message_color_4">#003E42</color>-->
-	<!--<color name="send_message_color_4">#1B4E79</color>-->
-	<!---->
-	<!-- settings-->
-
 	<color name="category_color">#2BA5CE</color>
 
 </resources>
