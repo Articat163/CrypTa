@@ -161,43 +161,7 @@ public class Content {
                             final String imgUrl;
                             imgUrl = pContent.attr("href");
                             getImageView(imgUrl);
-//                            main.addView(getTextView(builder.toString()));
-//                            builder = new StringBuilder();
 
-//                            ImageView imgView = new ImageView(context);
-////                            final String imgUrl = "https:" + pContent.attr("src");
-//                            final String imgUrl;
-//                            imgUrl = (pContent.attr("href") == null)? pContent.attr("data-src") : pContent.attr("href");
-//                            Log.d(TAG, "pContent.toString(): " + imgUrl);
-//                            main.addView(imgView);
-//                            final ProgressBar progressBar = new ProgressBar(context, null, android.R.attr.progressBarStyleLarge);
-//                            main.addView(progressBar);
-//                            // URL картинки (н-р: "http://site.com/image.png", "file:///mnt/sdcard/img/image.jpg")
-//                            // Запустили асинхронный показ картинки
-////                        imageLoader.displayImage(node.absUrl("src"), imgView, picOptions);
-//
-////                        Log.i(TAG, "node.absUrl(src).trim()|" + node.absUrl("src").trim() + "|");
-////						Glide.with(context).load(node.absUrl("src").trim()).into(imgView);
-//                            Glide.with(context)
-//                                    .load(imgUrl)
-//                                    .thumbnail(.5f)
-//                                    .listener(new RequestListener<String, GlideDrawable>() {
-//                                        @Override
-//                                        public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-//                                            progressBar.setVisibility(View.GONE);
-//                                            Log.e(TAG, "Glide onException: " + e);
-//                                            return false;
-//                                        }
-//
-//                                        @Override
-//                                        public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-//                                            progressBar.setVisibility(View.GONE);
-//                                            return false;
-//                                        }
-//                                    })
-//                                    .error(R.drawable.no_img)
-//                                    .diskCacheStrategy(DiskCacheStrategy.ALL)
-//                                    .into(imgView);
                         }
                         else if (((Element)node).select("img[data-src]").first() != null && pContent == null){
                             pContent = ((Element)node).select("img[data-src]").first();
@@ -207,9 +171,6 @@ public class Content {
                             getImageView(imgUrl);
                         }
                         else {
-//                            builder.append(Html.fromHtml(node.outerHtml()));
-//                            builder.append(Html.fromHtml(node.outerHtml()));
-//                            main.addView(getTextView(node.outerHtml()));
                             main.addView(getTextView(((Element) node).text()));
                         }
                     }
@@ -222,6 +183,10 @@ public class Content {
                         videoUrl = videoUrl.replace("?feature=oembed", "/0.jpg");
                         getImageView(videoUrl);
                         Log.i(TAG, "videoUrl: " + videoUrl);
+                    }
+
+                    else {
+                        main.addView(getTextView(((Element) node).text()));
                     }
 
 
