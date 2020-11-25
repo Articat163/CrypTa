@@ -9,7 +9,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -53,5 +53,5 @@ def var = dependencies {
 var
 
 dependencies {
-    implementation 'com.android.support:support-v13:28.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
 }

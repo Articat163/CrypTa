@@ -1,10 +1,12 @@
 package ru.articat.crypta.Fragments;
 
-import android.support.v4.app.*;
+import androidx.core.app.*;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 import ru.articat.crypta.R;
 
@@ -12,7 +14,7 @@ import ru.articat.crypta.R;
  * Created by Юрий on 25.06.2017.
  */
 
-public class NewsFromStarredFragment extends Fragment{
+public class NewsFromStarredFragment extends Fragment {
     static final String ARGUMENT_PAGE_NUMBER = "arg_page_number";
 
 
